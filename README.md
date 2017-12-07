@@ -7,4 +7,17 @@ The MERN stack using Meteor
 - React
 - Node
 
-1. Install React
+1.
+```
+$ git init
+$ git add .
+$ git commit -m "Initial commit"
+```
+
+2.
+```
+$ meteor npm install react --save
+$ meteor npm install reac-dom --save
+```
+
+3.
