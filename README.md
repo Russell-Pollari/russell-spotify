@@ -1,23 +1,6 @@
-# Meteor Tutorial
+# Spotify stats
 
-The MERN stack using Meteor
+A simple web-app to explore your spotify listening statistics.
+(At least the stats that they make available through their web API)
 
-- Mongo
-- Express
-- React
-- Node
-
-1.
-```
-$ git init
-$ git add .
-$ git commit -m "Initial commit"
-```
-
-2.
-```
-$ meteor npm install react --save
-$ meteor npm install reac-dom --save
-```
-
-3.
+Built with Meteor with the hope of building this into something bigger.

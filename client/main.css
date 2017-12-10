@@ -1,1 +1,14 @@
-/* CSS declarations go here */
+.artist-list {
+	font-size: 14px;
+	float: left;
+	width: 250px;
+}
+
+.selected {
+	font-weight: bold;
+	color: red;
+}
+
+.chart-display {
+	display: inline-block;
+}
