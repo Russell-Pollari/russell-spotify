@@ -82,7 +82,7 @@ app.get('/callback', function(req, res) {
       },
       json: true
     };
-
+    console.log(authOptions);
     request.post(authOptions, function(error, response, body) {
       if (!error && response.statusCode === 200) {
         var access_token = body.access_token,
@@ -96,6 +96,7 @@ app.get('/callback', function(req, res) {
           }));
       } else {
         console.log(error);
+        console.log(response.statusCode)
         res.redirect('/#' +
           querystring.stringify({
             error: 'invalid_token'
