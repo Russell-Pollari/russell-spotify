@@ -97,7 +97,8 @@ app.get('/callback', function(req, res) {
       } else {
         console.log(error);
         console.log(response.statusCode);
-        console.log(body)
+        console.log(body);
+				console.log(Meteor.settings);
         res.redirect('/#' +
           querystring.stringify({
             error: 'invalid_token'
