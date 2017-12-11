@@ -1,12 +1,12 @@
 import React from 'react';
 import R from 'ramda';
 
-import { getToken } from '../../lib/getToken';
-import { prepareGenreChartData } from  '../../lib/prepareGenreChartData';
+import { getToken } from '../lib/getToken';
+import { prepareGenreChartData } from  '../lib/prepareGenreChartData';
 
-import Header from '../components/Header';
-import Dashboard from '../components/Dashboard';
-import Login from '../components/Login';
+import Header from '../ui/components/Header';
+import Dashboard from '../ui/components/Dashboard';
+import Login from '../ui/components/Login';
 
 class App extends React.Component {
 	constructor(props) {
