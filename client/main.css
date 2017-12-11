@@ -1,14 +1,48 @@
-.artist-list {
+.app-container {
+	text-align: center;
+}
+
+.app-header {
 	font-size: 14px;
-	float: left;
+}
+
+.app-header > .title {
+	font-size: 20px;
+}
+
+.app-header > .sub-title {
+	margin: 12px;
+	font-size: 16px;
+}
+
+.login > .button {
+	display: inline-block;
+	padding: 12px;
+	margin: 40px;
+	color: white;
+	font-size: 16px;
+	border-radius: 4px;
+	background-color: blue;
+	text-decoration: none;
+}
+
+.dashboard {
+	margin: 20px;
+}
+
+.artist-list {
+	display: inline-block;
+	font-size: 14px;
 	width: 250px;
+	vertical-align: top;
 }
 
 .selected {
 	font-weight: bold;
-	color: red;
+	color: blue;
 }
 
 .chart-display {
+	font-size: 14px;
 	display: inline-block;
 }
