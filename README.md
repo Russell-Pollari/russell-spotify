@@ -1,8 +1,7 @@
 # Spotify stats
 
-A simple dashboard/hobby project to explore your spotify libraries statistics.
+A simple dashboard/hobby project to interact with Spotify's Web API.
 
-(At least the stats made available through Spotify's Web API, no play count unfortunatley).
 
 # Running locally
 
