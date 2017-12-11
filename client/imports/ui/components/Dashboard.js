@@ -19,10 +19,11 @@ const Dashboard = ({ props }) => {
 			</div>
 		);
 	}
+
 	return (
 		<div className="dashboard">
 			<div className="title">
-				Click an a genre to hilight the associated artists.
+				Click on a genre to highlight the associated artists.
 			</div>
 			<ArtistList {...props} />
 			<GenreChart {...props} />
