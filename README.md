@@ -2,10 +2,9 @@
 
 A simple dashboard/hobby project to interact with Spotify's Web API.
 
-
 # Running locally
 
-Register an app with Spotify, create a file in the root directory named
+Register an app with Spotify and create a file in the root directory named
 `settings.json` with the following:
 
 ```
@@ -20,6 +19,10 @@ Register an app with Spotify, create a file in the root directory named
 }
 ```
 
-Start the app and access from http://localhost:3000
+Install npm packages:
+
+`meteor npm install`
+
+Start the app:
 
 `meteor run -s settings.json`
