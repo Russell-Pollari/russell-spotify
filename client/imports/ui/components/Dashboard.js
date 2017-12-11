@@ -10,8 +10,20 @@ const Dashboard = ({ props }) => {
 			<Loading />
 		);
 	}
+
+	if (props.error) {
+		return (
+			<div>
+				There was an error fetching the data..<br />
+				{props.error}
+			</div>
+		);
+	}
 	return (
 		<div className="dashboard">
+			<div className="title">
+				Click an a genre to hilight the associated artists.
+			</div>
 			<ArtistList {...props} />
 			<GenreChart {...props} />
 		</div>

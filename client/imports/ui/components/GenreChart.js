@@ -14,7 +14,7 @@ const GenreChart = ({ genreData, onGenreClick }) => {
 
 	return (
 		<div className="chart-display">
-			<div>
+			<div className="title">
 				<strong>Your top genres</strong>
 			</div>
 			<HorizontalBar

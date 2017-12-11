@@ -1,8 +1,5 @@
 .app-container {
 	text-align: center;
-}
-
-.app-header {
 	font-size: 14px;
 }
 
@@ -13,6 +10,10 @@
 .app-header > .sub-title {
 	margin: 12px;
 	font-size: 16px;
+}
+
+.title {
+	margin-bottom: 8px;
 }
 
 .login > .button {
@@ -32,9 +33,9 @@
 
 .artist-list {
 	display: inline-block;
-	font-size: 14px;
 	width: 250px;
 	vertical-align: top;
+	line-height: 120%;
 }
 
 .selected {
@@ -43,6 +44,5 @@
 }
 
 .chart-display {
-	font-size: 14px;
 	display: inline-block;
 }

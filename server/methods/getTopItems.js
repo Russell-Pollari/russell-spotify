@@ -1,4 +1,4 @@
-import { spotifyWebApi } from '../imports/spotifyWebApi';
+import { spotifyWebApi } from '../imports/api/spotifyWebApi';
 
 Meteor.methods({
 	async getTopItems(access_token) {
@@ -9,6 +9,7 @@ Meteor.methods({
 			});
 			return result.body.items;
 		} catch (error) {
+			console.log(error);
 			throw new Meteor.Error(error.type, error.message);
 		}
 	}

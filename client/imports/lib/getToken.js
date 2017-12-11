@@ -1,5 +1,5 @@
 export const getToken = () => {
-	var hashParams = {};
+	const hashParams = {};
 	var e, r = /([^&;=]+)=?([^&;]*)/g,
 			q = window.location.hash.substring(1);
 	while ( e = r.exec(q)) {

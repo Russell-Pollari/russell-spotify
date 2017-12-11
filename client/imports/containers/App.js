@@ -1,5 +1,4 @@
 import React from 'react';
-import R from 'ramda';
 
 import { getToken } from '../lib/getToken';
 import { prepareGenreChartData } from  '../lib/prepareGenreChartData';
@@ -17,14 +16,20 @@ class App extends React.Component {
 			artists: [],
 			genreData: null,
 			loading: true,
-			selectedGenre: null
+			selectedGenre: null,
+			error: null
 		}
 	}
 
-	render() {
+	componentDidMount() {
 		if (this.state.accessToken) {
 			Meteor.call('getTopItems', this.state.accessToken, (error, result) => {
-				if (!error) {
+				if (error) {
+					this.setState({
+						error: error.reason,
+						loading: false
+					});
+				} else {
 					this.setState({
 						artists: result,
 						genreData: prepareGenreChartData(result),
@@ -33,11 +38,13 @@ class App extends React.Component {
 				}
 			});
 		}
+	}
 
+	render() {
 		const onGenreClick = e => {
 			this.setState({
 				selectedGenre: e[0]._view.label
-			})
+			});
 		};
 
 		const props = R.mergeAll([{
@@ -45,7 +52,8 @@ class App extends React.Component {
 		}, this.props, this.state]);
 
 		const content = this.state.accessToken ?
-			(<Dashboard props={props} />) : (<Login />);
+			(<Dashboard props={props} />) :
+			(<Login />);
 
 		return (
 			<div className="app-container">

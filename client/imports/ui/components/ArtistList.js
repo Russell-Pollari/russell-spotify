@@ -13,7 +13,9 @@ const ArtistList = ({ artists=[], selectedGenre }) => {
 
 	return (
 		<div className="artist-list">
-			<strong>Your top artists</strong>
+			<div className="title">
+				<strong>Your top artists</strong>
+			</div>
 			{items}
 		</div>
 	);
